@@ -1,0 +1,84 @@
+body {
+  color: white;
+  background: black;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+/* Estilos para navegadores baseados no WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  @apply w-3 h-3;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#6aaefc];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#3953B7] rounded-md;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[#213481];
+}
+
+/* componente sistema */
+.icon-config {
+  @apply flex items-center pl-5 hover:bg-[#131735] w-full h-full;
+}
+
+.btn-sistemas {
+  @apply flex items-center justify-center p-1 w-52;
+  @apply bg-purple-500 hover:bg-purple-700 rounded-2xl;
+}
+
+.sistemas-col1 {
+  @apply flex items-center justify-center w-1/5 h-full;
+  @apply border border-blue-300 font-bold;
+}
+
+.sistemas-col2 {
+  @apply flex items-center justify-center w-full h-full;
+  @apply border border-blue-300;
+}
+
+/* componente tickets */
+.tickets-container {
+  @apply flex w-full h-full p-4 gap-5
+}
+
+/* Left */
+.tickets-left-panel {
+  @apply flex w-2/6 p-2;
+}
+
+.tickets-left-panel-button {
+  @apply flex flex-col w-full h-full gap-5 pt-5;
+  @apply items-center;
+}
+
+.tickets-left-button {
+  @apply flex items-center justify-center w-full h-14 p-2;
+  @apply bg-blue-700 hover:bg-blue-500 rounded-2xl;
+}
+
+.tickets-left-input {
+  @apply bg-white text-black px-4 py-2 rounded-md;
+  @apply w-full h-10 text-center outline-none;
+}
+
+.tickets-left-icon-copy {
+  @apply flex justify-center bg-zinc-300 rounded-full p-2 ;
+  @apply text-[#3953B7] cursor-pointer;
+}
+
+/* Right */
+.tickets-right-panel {
+  @apply flex w-4/6 p-3;
+}
+
+.tickets-right-field {
+  @apply flex w-full h-full bg-white ;
+  @apply border-4 border-[#3953B7] rounded-2xl p-1;
+}
+
+
